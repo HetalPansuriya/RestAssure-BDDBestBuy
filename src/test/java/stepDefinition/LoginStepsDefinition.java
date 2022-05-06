@@ -45,7 +45,7 @@ public class LoginStepsDefinition {
 	@Then("^user get error message$")
 	public void user_get_error_message() throws Throwable {
 		System.out.println("Step 5 : User get error message");
-		String expectedErr = "Please enter a valid email address.";
+		String expectedErr = "Please enter an email address.";
 		String actualErr = lp.readError();
 		Assert.assertEquals(expectedErr, actualErr);
 	}
